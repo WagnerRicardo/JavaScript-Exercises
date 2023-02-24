@@ -17,6 +17,7 @@ if (!(2 == 4)){
     document.write('Falso')
 }
 */
+/*
 var nota = prompt('Digite Sua Nota: ')
 var faltas = prompt('Digite Suas Faltas: ')
 
@@ -36,4 +37,21 @@ if (nota <=10 && faltas <= 300){
 }
 else{
     document.write('<h3>Valoes Inválidos</h3>')
+}
+*/
+var nota = prompt('Digite Sua Nota: ')
+var faltas = prompt('Digite Suas Faltas: ')
+
+var NotaMin = 5
+var FaltasMax = 150
+
+nota = parseFloat(nota)
+faltas = parseInt(faltas)
+
+var resultado = (nota >= NotaMin && faltas < FaltasMax) ? '<h1>Aprovado!</h1>' : '<h2>REPROVADO</h2>'
+
+if (nota <= 10 && faltas <= 300){
+    document.write(resultado)
+} else{
+    document.write('<h3>Valores inválidos</h3>')
 }
