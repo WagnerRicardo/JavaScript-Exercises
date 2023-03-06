@@ -11,3 +11,14 @@ function CalcularArea (largura, comprimento){
 
     return(area)
 }
+//flexibilidade de parâmetros
+function soma(a, b){
+    a = a == undefined ? 0 : a 
+    b = b == undefined ? 0 : b
+    return a + b
+}
+
+console.log(soma(4, 5))
+console.log(soma(3, 4, 5))
+console.log(soma(1))
+console.log(soma())
