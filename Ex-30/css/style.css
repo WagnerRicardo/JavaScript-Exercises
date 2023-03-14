@@ -1,0 +1,14 @@
+.boxStyle{
+    width: 100px;
+    height: 100%;
+    padding: 50px;
+    color: #FFF;
+    background-color: #0000FF;
+}
+.boxStyle2{
+    width: 200px;
+    height: 8em;
+    padding: 50px;
+    color: #000;
+    background-color: #FF0000;
+}
