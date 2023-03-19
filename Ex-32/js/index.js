@@ -1,11 +1,11 @@
 //display visual e calculo
 function visor(type, value){
+    var visorVal = document.getElementById('visor').value
     //clear
     if (type === 'act' && value === 'c'){
         document.getElementById('visor').value = ''
         storeValues = ''
     }
-    var visorVal = document.getElementById('visor').value
     //expressão
     //ação
     if (type === 'act' && visorVal.length >= 1 && visorVal.charAt(visorVal.length - 1) !== '/'
