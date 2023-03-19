@@ -9,16 +9,16 @@ function visor(type, value){
     //expressão
     //ação
     if (type === 'act' && visorVal.length >= 1 && visorVal.charAt(visorVal.length - 1) !== '/'
-    && visorVal.charAt(visorVal.length - 1) !== '*' && visorVal.charAt(visorVal.length - 1) !== '+'
-    && visorVal.charAt(visorVal.length - 1) !== '.'){
-        if(value === '/'){
+    && visorVal.charAt(visorVal.length - 1) !== 'x' && visorVal.charAt(visorVal.length - 1) !== '+'
+    && visorVal.charAt(visorVal.length - 1) !== '.' && visorVal.charAt(visorVal.length - 1) !== '-'){
+        if(value === '/' && visorVal.charAt(visorVal.length - 1) !== '0'){
             document.getElementById('visor').value += value
             storeValues += value
         }else if(value === '+'){
             document.getElementById('visor').value += value
             storeValues += value
         }
-        else if ( value === '-' ){
+        else if ( value === '-'){
             document.getElementById('visor').value += value
             storeValues += value
         }
