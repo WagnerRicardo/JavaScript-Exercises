@@ -1,7 +1,6 @@
-var testList = Array('A', 'B', 'C', 'D')
+var testList = []
 
-var val = 5
+testList['x'] = 'val1'
+testList['1'] = 'val2'
 
-testList[3] = val
-
-console.log(testList[2])
+console.log(testList)
