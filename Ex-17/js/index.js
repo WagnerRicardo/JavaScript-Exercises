@@ -17,5 +17,4 @@ var callbackError = function(error){
     document.write('<h2>' + error + '</h2>')
 }
 
-artDisplay('1'
-, callbackSuccess, callbackError)
+artDisplay('1', callbackSuccess, callbackError)
