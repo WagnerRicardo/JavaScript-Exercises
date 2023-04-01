@@ -14,9 +14,20 @@
 
   <body onresize="screenSize()">
     <main>
+      <!--painel-->
+      <div class="dashboard">
+        <div class="lifeboard">
+          <img src="img/coracao_cheio.png">
+          <img src="img/coracao_cheio.png">
+          <img src="img/coracao_vazio.png">
+        </div>
+        <div class="timer">
+          Tempo restante: 
+        </div>
+      </div>
       <!--Place Mosquito-->  
       <script>
-        mosPosition()
+        setInterval(timedAction, 1000)
       </script>
 
     </main>

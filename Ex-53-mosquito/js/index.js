@@ -5,6 +5,12 @@ function screenSize(){
 }
 //posições aleatorias na tela
 function mosPosition(){
+    //mosquito existe?
+    var mosquitoElement = document.getElementById('mosquito')
+    if(mosquitoElement){
+        mosquitoElement.remove()
+    }
+
     //gerador de posição
     var posX = Math.floor(Math.random() * screenWidth) - 90
     var posY = Math.floor(Math.random() * screenHeight) - 90
@@ -17,6 +23,7 @@ function mosPosition(){
     mosquito.className = mosSize() + ' ' + mosFacing()
     mosquito.style.left = posX + 'px'
     mosquito.style.top = posY + 'px'
+    mosquito.id = 'mosquito'
 
     document.body.appendChild(mosquito)
 }
@@ -43,6 +50,10 @@ function mosFacing(){
         case 1:
             return ('facingR')
     }
+}
+//executar a cada segundo
+function timedAction(){
+    mosPosition()
 }
 //Tamanho da tela, variaveis auxiliares
 var screenHeight = 0
