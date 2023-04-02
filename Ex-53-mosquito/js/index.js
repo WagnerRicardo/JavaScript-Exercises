@@ -9,6 +9,11 @@ function mosPosition(){
     var mosquitoElement = document.getElementById('mosquito')
     if(mosquitoElement){
         mosquitoElement.remove()
+        if (health <= 1){
+            window.location.href = 'gameover.html'
+        }
+        document.getElementById('hp' + health).src = 'img/coracao_vazio.png'
+        health--
     }
 
     //gerador de posição
@@ -24,6 +29,7 @@ function mosPosition(){
     mosquito.style.left = posX + 'px'
     mosquito.style.top = posY + 'px'
     mosquito.id = 'mosquito'
+    mosquito.onclick = mosClick
 
     document.body.appendChild(mosquito)
 }
@@ -55,8 +61,18 @@ function mosFacing(){
 function timedAction(){
     mosPosition()
 }
+//ao clicar no mosquito
+function mosClick(){
+    this.remove()
+}
+//reiniciar jogo
+function resertGame(){
+    window.location.href = 'game.html'
+}
+
 //Tamanho da tela, variaveis auxiliares
 var screenHeight = 0
 var screenWidth = 0
 screenSize()
-
+//vidas, var auxiliar
+var health = 3
