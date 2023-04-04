@@ -25,7 +25,7 @@ Layout do painel
 .lifeboard{
     width: 100%;
 }
-.timer{
+.timerArea{
     font-size: 24px;
 }
 /*
@@ -51,4 +51,13 @@ Display do mosquito
 }
 .facingR{
     transform: scaleX(-1);
+}
+/*sm-align*/
+.sm-align{
+    margin-top: 1%;
+}
+@media (max-width: 720px) {
+    .sm-align{
+        margin-top: 25%;
+    }    
 }

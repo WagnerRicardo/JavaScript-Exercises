@@ -21,13 +21,17 @@
           <img id="hp2" src="img/coracao_cheio.png">
           <img id="hp3" src="img/coracao_cheio.png">
         </div>
-        <div class="timer">
-          Tempo restante: 
+        <div class="timerArea">
+          Tempo restante: <span id="timer"></span>
         </div>
       </div>
       <!--Place Mosquito-->  
       <script>
-        setInterval(timedAction, 1000)
+        //cronometro display
+        document.getElementById('timer').innerHTML = timer
+        //mosquito inserir
+        mosPosition()
+        var timerMosquito = setInterval(mosTimer, 1000)
       </script>
 
     </main>

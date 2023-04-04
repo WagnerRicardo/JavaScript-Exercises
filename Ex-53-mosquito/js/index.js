@@ -58,8 +58,21 @@ function mosFacing(){
     }
 }
 //executar a cada segundo
-function timedAction(){
+function mosTimer(){
+    //mosquito
     mosPosition()
+}
+//cronometro
+function timerFunction(){
+    //cronometro
+    timer--
+    if (timer < 0){
+        clearInterval(timerMosquito)
+        clearInterval(timerInterval)
+        window.location.href = 'gamewin.html'
+    }else{
+        document.getElementById('timer').innerHTML = timer
+    }               
 }
 //ao clicar no mosquito
 function mosClick(){
@@ -69,6 +82,13 @@ function mosClick(){
 function resertGame(){
     window.location.href = 'game.html'
 }
+//iniciar jogo
+function startGame(){
+    var level = document.getElementById('levelSelect').value
+    if (level !== ''){
+        alert(level)
+    }
+}
 
 //Tamanho da tela, variaveis auxiliares
 var screenHeight = 0
@@ -76,3 +96,8 @@ var screenWidth = 0
 screenSize()
 //vidas, var auxiliar
 var health = 3
+//cronometro
+var timer = 10
+var timerInterval = setInterval(timerFunction, 1000)
+//nivel de dificuldade
+level = 0
