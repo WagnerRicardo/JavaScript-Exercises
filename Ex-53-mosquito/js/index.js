@@ -86,8 +86,15 @@ function resertGame(){
 function startGame(){
     var level = document.getElementById('levelSelect').value
     if (level !== ''){
-        alert(level)
+        sessionStorage.setItem('difficulty', level)
+        window.location.href = 'game.html'
+    }else{
+        alert('escolha um nivel!')
     }
+}
+//voltar para a pag inicial
+function returnHome(){
+    window.location.href = 'index.html'
 }
 
 //Tamanho da tela, variaveis auxiliares
@@ -99,5 +106,3 @@ var health = 3
 //cronometro
 var timer = 10
 var timerInterval = setInterval(timerFunction, 1000)
-//nivel de dificuldade
-level = 0

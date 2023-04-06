@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Style-->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      html{
+        cursor: url("img/mata_mosca.png") 30 30 auto;
+      }
+    </style>
     <!--Tab-->
     <title>Mata Mosquito - Game</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -29,9 +34,26 @@
       <script>
         //cronometro display
         document.getElementById('timer').innerHTML = timer
-        //mosquito inserir
+        //mosquito inserir, mosquito timer
         mosPosition()
-        var timerMosquito = setInterval(mosTimer, 1000)
+
+        console.log(sessionStorage.getItem('difficulty'))
+        var setLevel = sessionStorage.getItem('difficulty')
+        var setRate = 1000
+        switch (setLevel){
+          case '1':
+            setRate = 2000
+          break
+          case '2':
+            setRate = 1000
+          break
+          case '3':
+            setRate = 666
+          break
+        }
+
+        console.log(setRate)
+        var timerMosquito = setInterval(mosTimer, setRate)
       </script>
 
     </main>
