@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+      <!--Metadata-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--tab-->
+      <title>Calculadora</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <!--styles-->
+      <link rel="stylesheet" href="css/style.css">
+	</head>
+
+    <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <br />
+
+          <div class="calculadora">
+            <input id="visor" type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
+            <!--teclas-->
+            <div class="row justify-content-center">
+              <!--col1-->
+              <div class="col-auto ml-0 mr-3 pl-0 pr-0">
+                <div class="row">
+                  <button onclick="visor('act', 'ac')" type="button" class="btn btn-dark btn-lg font-weight-light">AC</button>
+                  <button onclick="visor('act', 'del')" type="button" class="btn btn-dark btn-lg font-weight-light">DEL</button>
+                  <button onclick="visor('act', '/')" type="button" class="btn btn-dark btn-lg font-weight-light">/</button>
+                </div>  
+
+                <div class="row">
+                  <button onclick="visor('num', 7)" type="button" class="btn btn-dark btn-lg font-weight-light">7</button>
+                  <button onclick="visor('num', 8)" type="button" class="btn btn-dark btn-lg font-weight-light">8</button>
+                  <button onclick="visor('num', 9)" type="button" class="btn btn-dark btn-lg font-weight-light">9</button>
+                </div>
+
+
+                <div class="row">
+                  <button onclick="visor('num', 4)" type="button" class="btn btn-dark btn-lg font-weight-light">4</button>
+                  <button onclick="visor('num', 5)" type="button" class="btn btn-dark btn-lg font-weight-light">5</button>
+                  <button onclick="visor('num', 6)" type="button" class="btn btn-dark btn-lg font-weight-light">6</button>
+                </div>
+
+                <div class="row">
+                  <button onclick="visor('num', 1)" type="button" class="btn btn-dark btn-lg font-weight-light">1</button>
+                  <button onclick="visor('num', 2)" type="button" class="btn btn-dark btn-lg font-weight-light">2</button>
+                  <button onclick="visor('num', 3)" type="button" class="btn btn-dark btn-lg font-weight-light">3</button>
+                </div>
+
+                <div class="row">
+                  <button onclick="visor('num', 0)" type="button" class="btn btn-dark zero btn-lg font-weight-light">0</button>
+                  <button onclick="visor('act', '.')" type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
+                </div>
+              </div>
+              <!--col2-->
+              <div class="col-auto ml-3 mr-0 pl-0 pr-0">
+                <div class="row">
+                  <button onclick="visor('act', '*')" type="button" class="btn btn-dark btn-lg font-weight-light">x</button>
+                </div>
+                <div class="row">
+                  <button onclick="visor('act', '-')" type="button" class="btn btn-dark btn-lg font-weight-light">-</button>
+                </div>
+                <div class="row">
+                  <button onclick="visor('act', '+')" type="button" class="btn btn-dark btn-lg font-weight-light">+</button>
+                </div>
+                <div class="row">
+                  <button onclick="visor('act', '=')" type="button" class="btn btn-dark btn-lg enter">=</button>
+                </div>
+              </div>
+
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+    </div>
+    <!--scripts-->
+    <script>document.getElementById('visor').value = ''</script>
+    <script src="js/index.js"></script>   
+
+    </body>	
+
+</html>

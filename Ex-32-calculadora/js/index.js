@@ -32,6 +32,7 @@ function visor(type, value){
         }
         else if (value === '='){
             document.getElementById('visor').value = eval(storeValues)
+            console.log(storeValues)
         }
     //numero
     }else if (type === 'num'){
