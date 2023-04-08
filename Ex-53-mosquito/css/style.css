@@ -1,10 +1,30 @@
 /*
 Page layout general
 */
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
 body{
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
+    display: flex;
     height: 100%;
+    align-content: center;
+    margin: 0;
+    padding: 0
+} 
+@media (min-width: 720px){
+    body{
+        background-size: 100%;
+    }   
+    main{
+        align-self: center;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+    }
 }
 select, option{
     cursor: pointer;
@@ -58,9 +78,4 @@ Display do mosquito
 /*sm-align*/
 .sm-align{
     margin-top: 1%;
-}
-@media (max-width: 720px) {
-    .sm-align{
-        margin-top: 25%;
-    }    
 }
