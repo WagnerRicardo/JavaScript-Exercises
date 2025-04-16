@@ -45,8 +45,8 @@ Este remake serviu como uma forma de:
 
 ## 🔗 Acesse
 
-- [🔴 Veja o projeto online](#)
-- [💻 Repositório no GitHub](#)
+- [🔴 Veja o projeto online]([#](https://wagnerricardo.github.io/JavaScript-Exercises/Ex-53-mosquito-remake/))
+- [💻 Repositório no GitHub](#[text](https://github.com/WagnerRicardo/JavaScript-Exercises/tree/d08196ec0dbd91272db6011be2ebf93aba5bb57a/Ex-53-mosquito-remake))
 
 ---
 
