@@ -31,7 +31,7 @@ function startGame(){
 
     let jogador = utils.getValidatedPlayerSettings();
 
-    if(!jogador){
+    if(jogador == null){
         jogador = new PlayerSettings(levelSelect.value, 0, true, 0);
     }
     
