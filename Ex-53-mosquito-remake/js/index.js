@@ -29,14 +29,12 @@ function startGame(){
 
     //criar objeto do jogador
 
-    let jogador = null;
-    const savedData = utils.getValidatedPlayerSettings();
+    let jogador = utils.getValidatedPlayerSettings();
 
-    if(!savedData){
+    if(!jogador){
         jogador = new PlayerSettings(levelSelect.value, 0, true, 0);
     }
     
-    jogador = savedData;
     jogador.dificuldade = levelSelect.value;
 
     localStorage.setItem('playerSettings', JSON.stringify(jogador));
