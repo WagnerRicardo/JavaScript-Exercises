@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.dialog-box{
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.329);
+    position: fixed;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.dialog-card1{
+    position: relative;
+    display: block;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+.dialog-card1 h2{
+    font-size: 1.5em;
+}
+.dialog-box .dialog-card1 h2{
+    display: inline;
+    color: rgb(179, 0, 0);
+}
+.dialog-card1 .button{
+    width: fit-content;
+    position: relative;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FFF;
+}
+.dialog-card1 .btn-close{
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 2em;
+    line-height: 1em;
+    color: gray;
+    display: inline;
+    position: absolute;
+    right: 20px;
+}
