@@ -1,0 +1,172 @@
+/*reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Page layout general
+*/
+html{
+    min-height: 100%;
+}
+body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+body#gameBody{
+    height: 100vh;
+    cursor: url('../img/mata_mosca.png') 30 30, auto;
+}
+
+select, option{
+    cursor: pointer;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav.secondaryNav{
+    display: flex;
+    flex-direction: column;
+}
+
+/* menu principal */
+.container{
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 100%;
+    height: min-content;
+}
+
+.logo img{
+    width: 500px;
+    max-width: 100%;
+}
+
+.menuPrincipal{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#levelSelect, button{
+    padding: .7em 1em;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: #FFF;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: .5em;
+}
+
+button.btnImportant{
+    color: #FFF;
+    background-color: #dc3545;
+}
+button.btnInfo{
+    color: #FFF;
+    background-color: #343a40;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+option{
+    width: 50%;
+}
+
+.erroForm{
+    color: #dc3545;
+    background-color: rgba(255, 255, 255, 0.507);
+    padding: .5em;
+    border-radius: 10px;
+}
+
+.pontos{
+    text-align: center;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.507);
+    padding: .5em;
+    border-radius: 10px;
+    margin: 1em;
+}
+.visuallyHidden{
+    display: none;
+}
+
+/*
+Layout do painel
+*/
+.dashboard{
+    position: absolute;
+    width: 190px;
+    border-top:1px solid #FFF ;
+    background-color: #FFF;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    align-items: start
+}
+.lifeboard{
+    width: 100%;
+}
+.timerArea{
+    font-size: 24px;
+}
+/*
+Display do mosquito
+*/
+.mosquito1, .mosquito2, .mosquito3{
+    position: absolute;
+}
+.mosquito1{
+    width: 50px;
+    height: 50px;
+}
+.mosquito2{
+    width: 70px;
+    height: 70px;
+}
+.mosquito3{
+    width: 90px;
+    height: 90px;
+}
+.facingL{
+    transform: scaleX(1);
+}
+.facingR{
+    transform: scaleX(-1);
+}
+/*MOBILE DEVICES*/
+@media (min-width: 720px){
+    main{
+        align-self: center;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+    }
+}

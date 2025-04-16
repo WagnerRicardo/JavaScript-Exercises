@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Tab-->
+    <title>Mata Mosquito - Game</title>
+    <link rel="icon" href="img/mosca.png" type="image/x-icon">
+  </head>
+
+  <body id="gameBody">
+    <main>
+      <!--painel-->
+      <div class="dashboard" aria-label="Painel de Jogo">
+        <div class="lifeboard" aria-label="Vidas restantes">
+          <img class="hp" src="img/coracao_cheio.png" alt="vida 1 cheia">
+          <img class="hp" src="img/coracao_cheio.png" alt="vida 2 cheia">
+          <img class="hp" src="img/coracao_cheio.png" alt="vida 3 cheia">
+        </div>
+        <div class="timerArea" aria-label="Tempo restante">
+          Tempo restante: <span id="timer">15</span>
+        </div>
+      </div>
+      <!--Place Mosquito-->
+      
+      <script src="js/game.js" type="module"></script>
+
+    </main>
+  </body>
+</html>

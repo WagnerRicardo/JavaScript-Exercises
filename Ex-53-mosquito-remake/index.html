@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Tab-->
+    <title>Mata Mosquito -Inicio</title>
+    <link rel="icon" href="img/mosca.png" type="image/x-icon">
+
+  </head>
+
+  <body>
+    <main class="container">
+      <!--menu-->
+      <section class="menuPrincipal">
+        <div class="logo">
+            <img alt="Game Logo" src="img/game.png"/>
+        </div>
+        <!--BUTTON ACTIONS-->
+        <form id="optionsMenu">
+          <fieldset>
+            <label for="levelSelect" class="visuallyHidden">Selecione a dificuldade</label>
+            <select id="levelSelect" required>
+              <option value="">--SELECIONE O NIVEL--</option>
+              <option value="1">-- Baby mode --</option>
+              <option value="2">-- Medium --</option>
+              <option value="3">-- Impossible --</option>
+            </select>
+            <p class="erroForm" aria-live="polite"></p>
+            <button id="btnStart" class="btnImportant" type="button">Iniciar Jogo</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    
+    <script type="module" src="js/index.js"></script>
+
+  </body>
+</html>
